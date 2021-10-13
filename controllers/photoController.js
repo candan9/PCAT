@@ -1,4 +1,5 @@
 const Photo = require('../models/Photo');
+
 const fs = require('fs');
 exports.getAllPhotos = async (req, res) => {
   const photos = await Photo.find({}).sort('-dateCreated');
